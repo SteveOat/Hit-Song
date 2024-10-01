@@ -3187,3 +3187,28 @@
     }
   ]
 }
+
+```bash
+fig = make_subplots(
+    rows=3,
+    cols=3,
+    subplot_titles=('<i>Popularity', '<i>Danceability', '<i>Energy', '<i>Loudness', '<i>Speechiness', '<i>Acousticness', '<i>Liveness', '<i>Valence', '<i>Tempo')
+)
+
+fig.add_trace(go.Histogram(x=df_final['Popularity'], name='Popularity'), row=1, col=1)
+fig.add_trace(go.Histogram(x=df_final['Danceability'], name='Danceability'), row=1, col=2)
+fig.add_trace(go.Histogram(x=df_final['Energy'], name='Energy'), row=1, col=3)
+fig.add_trace(go.Histogram(x=df_final['Loudness'], name='Loudness'), row=2, col=1)
+fig.add_trace(go.Histogram(x=df_final['Speechiness'], name='Speechiness'), row=2, col=2)
+fig.add_trace(go.Histogram(x=df_final['Acousticness'], name='Acousticness'), row=2, col=3)
+fig.add_trace(go.Histogram(x=df_final['Liveness'], name='Liveness'), row=3, col=1)
+fig.add_trace(go.Histogram(x=df_final['Valence'], name='Valence'), row=3, col=2)
+fig.add_trace(go.Histogram(x=df_final['Tempo'], name='Tempo'), row=3, col=3)
+
+fig.update_layout(height=900, width=900, title_text='<b>Feature Distribution')
+fig.update_layout(template='plotly_dark', title_x=0.5)
+
+# Show the figure
+fig.show()
+
+```
