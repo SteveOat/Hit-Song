@@ -1,7 +1,7 @@
 <h1>Introducing Dataset</h1>
 lorem
 
-The dataset offers a detailed overview of contemporary music, featuring 620 tracks from 87 chart-topping artists between 2000 and 2023. It highlights the diversity of modern pop and R&B, capturing the evolution of Hot 100 hits over two decades. Each track is annotated with Spotify's audio features, providing insights into characteristics like tempo, energy, danceability, and valence, making it a valuable resource for exploring trends in popular music.
+&nbsp;&nbsp;&nbsp;&nbsp; The dataset offers a detailed overview of contemporary music, featuring 620 tracks from 87 chart-topping artists between 2000 and 2023. It highlights the diversity of modern pop and R&B, capturing the evolution of Hot 100 hits over two decades. Each track is annotated with Spotify's audio features, providing insights into characteristics like tempo, energy, danceability, and valence, making it a valuable resource for exploring trends in popular music.
 
 <h1>Key finding</h1>
 
@@ -213,89 +213,145 @@ Detects the presence of a live audience in the recording, from 0.0 to 1.0. <br>
 
 ![newplot](https://github.com/user-attachments/assets/0a3515db-6d85-4f76-bde0-336cb21d78c7)
 
-Most Represented Keys:
+B , C and C#/Db :
 
-> The keys B (75 tracks) and C (74 tracks) have the highest number of tracks, suggesting these keys may be more popular or frequently used in the music represented by this dataset.
-
-Least Represented Key:
-
-> The key Eb has the least representation with only 17 tracks, indicating it may be less commonly used or less popular among the tracks in this dataset.
-
+> The keys B, C, and C#/Db dominate this dataset, while Eb and A#/Bb are the least represented. It seems the dataset leans heavily on certain keys while others are used less frequently.
 
 <h3>Time Signature</h3>
 
 ![newplot (1)](https://github.com/user-attachments/assets/b75c1d2e-1a45-4b4d-ab3a-86da65d16aaf)
 
+4/4 Time Signature:
 
+> The overwhelming majority of tracks (584) use the 4/4 time signature, while other time signatures like 3/4, 5/8, and 1/4 are used much less frequently, making them rare in the dataset. This reflects the dominance of the 4/4 signature in mainstream music.
 
 <h3>Major or Minor</h3>
 
 ![newplot (2)](https://github.com/user-attachments/assets/b48fb2e5-7ed3-47a2-87b7-9827cabdfc9d)
 
+Major Mode:
+> Most songs in the dataset are in a major key, making up almost two-thirds of the total. A smaller chunk, just over a third, are in a minor key, which tends to give songs a different, more emotional vibe.
+
 <h3> Tempo</h3>
 
 ![newplot (3)](https://github.com/user-attachments/assets/13e37899-67cc-41ad-b7e5-0e4146660463)
+
+Mid & High Tempo
+
+> Most of the tracks in this dataset are either mid-tempo or high-tempo, with a slight edge to the faster songs. Low-tempo tracks don’t seem to be represented at all.
 
 <h3> Duration </h3> 
 
 ![newplot (4)](https://github.com/user-attachments/assets/c9060aa4-32c9-47ee-a799-8df729eeb141)
 
-> Most Represented Duration:
+3-5 minutes song :
 
-Tracks between 3-5 minutes dominate. The majority of the tracks, 462 in total, fall within the 3-5 minute range. This indicates that most tracks in the dataset are of moderate length, which is a common duration for popular music.
-
-> Least Represented Duration:
-
-Only 10 tracks exceed 5 minutes, suggesting that extended tracks are rare in this dataset.
+> Tracks between 3-5 minutes dominate. The majority of the tracks, 462 in total, fall within the 3-5 minute range. This indicates that most tracks in the dataset are of moderate length, which is a common duration for popular music.
 
 <h3> Loudness </h3>
 
 ![newplot (5)](https://github.com/user-attachments/assets/fed033df-3ca4-448e-969d-2edc55ce53a8)
 
+High Loudness:
+
+> The dataset is heavily skewed towards songs with high loudness, with a significant majority of tracks falling into this category. Mid- and low-loud tracks are much less common. This refers to tracks with a higher overall sound level.
+
 <h3> Danceability </h3>
 
 ![newplot (6)](https://github.com/user-attachments/assets/bc7b53c0-cfbc-423d-866c-146ce89d5681)
+
+Mid Dancability :
+
+> Mid Dance (red), mid-danceability tracks are the most common and have a wide range of popularity, while low-danceability tracks are the least common but can still be quite popular.
 
 <h3> Energy </h3>
 
 ![newplot (8)](https://github.com/user-attachments/assets/ce593f60-0178-4b03-9b96-1ce4d6e2832a)
 
+Mid Energy (red)
+
+> The dataset is dominated by mid- and high-energy tracks, with high-energy tracks showing a concentration in the middle popularity range. Low-energy songs are less common but can achieve high popularity, with a notable spread in their popularity scores.
+
 <h3> Speechiness</h3>
 
 ![newplot (9)](https://github.com/user-attachments/assets/7ae4fa8a-5bb1-4b31-8cb3-d83844f6bbe8)
+
+Low Speechiness (yellow):
+
+> Scatter plot suggests that most popular songs don't have a high amount of spoken word content. Songs with more speech-like qualities (mid and high speechiness) are less common, and their popularity is more varied.
 
 <h3> Acouticness</h3>
 
 ![newplot (10)](https://github.com/user-attachments/assets/e39cf834-84ce-4ffb-ac33-894abde0e670)
 
+Low Acousticness (yellow):
+
+> Most tracks in the dataset are less acoustic and more electronic or produced, and they tend to fall in the mid-to-high popularity range. As acousticness increases, the number of tracks decreases, and popularity tends to spread more evenly across a mid-level range.
+
 <h3> Instrumentalness</h3>
 
 ![newplot (11)](https://github.com/user-attachments/assets/d0a91a32-9c64-4226-9869-5a35ee1bdeb6)
+
+Low Instrumentalness (yellow):
+
+> Most tracks have very low instrumentalness, meaning they likely include vocals and are more popular. Mid and high instrumentalness tracks (which likely have more instrumental content or no vocals) are far less common but can still achieve moderate popularity.
 
 <h3> Valence</h3>
 
 ![newplot (12)](https://github.com/user-attachments/assets/1b293f16-f220-4982-a5b6-f9758d7c4fb2)
 
+Mid & High Valence :
+
+> Mid- and high-valence tracks (positive or happy songs) dominate the dataset, and they tend to be quite popular, with most falling in the 60 to 80 popularity range.
+
 <h3> Liveness</h3>
 
 ![newplot (13)](https://github.com/user-attachments/assets/1dc50313-3d18-43ac-bf09-76be75cb45ec)
+
+Studio Liveness (light purple) :
+
+> Most of the tracks in this dataset have low liveness,indicates these tracks are likely recorded in a studio setting. Tracks with higher liveness (more live-sounding or actual live recordings) are less common but can still achieve a wide range of popularity levels.
 
 <hr>
 
 <h2>2. Find the most streamed genre on platform.</h2>
 
-> Genre VS Streams
-
 ![newplot (14)](https://github.com/user-attachments/assets/35ad2e04-b9c9-421c-8428-e6ed70ceb0e9)
+
+> The *NaN* Data
+
+&nbsp;&nbsp;&nbsp;&nbsp; The **Pop** genre is by far the most streamed on the platform, with a huge margin over other genres. But the presence of a significant number of *"Unknown"* labels affects the clarity of the data and should be noted when interpreting these results.
+
+<br>
+
+![newplot (17)](https://github.com/user-attachments/assets/23f16954-1b47-43b6-b0ab-628694e67849)
+
+> More clarify data
+
+&nbsp;&nbsp;&nbsp;&nbsp; In this dataset, the *"Unknown"* label only accounts for 1.19 billion streams, which is much lower than in the first dataset. This gives us more confidence in the genre distribution and allows for more accurate conclusions.
+
+&nbsp;&nbsp;&nbsp;&nbsp; From the "Streams by Genre" chart, we can clearly see that **Pop is the most dominant genre**, with a staggering 200.77 billion streams, making it far more popular than any other genre on the platform.
+
+Other significant genres include:
+
+ - **World/Traditional**, with 45.05 billion streams, and
+ - **R&B/Soul**, with 26.11 billion streams.
+
+These genres are still popular but are dwarfed by Pop's massive stream count.
 
 <hr>
 
 <h2>3. Does the artist's fame affect whether a song makes it onto the Billboard charts?</h2>
 
-> Genre VS  Track of Artist VS Streams
+<h4>
+  Let's highlight an important point about quality versus quantity when it comes to music tracks by artists.
+</h4>
 
 ![newplot (16)](https://github.com/user-attachments/assets/ab5b443e-1611-470a-a3a6-c070d8793b5d)
 
+&nbsp;&nbsp;&nbsp;&nbsp; **Artists with fewer tracks but high average popularity** (like J Balvin, Grupo Frontera, and Tyler Childers) suggest that, even though they release fewer songs, the songs they do release are very popular and well-received. This implies a focus on quality over quantity—the fewer songs they release tend to be hits, indicating that their music resonates strongly with listeners.
+
+&nbsp;&nbsp;&nbsp;&nbsp; On the other hand, **artists with more tracks but lower average popularity** (like Latto and Lizzo) might indicate that their popularity is driven more by their overall fame and brand as artists, rather than the quality of each individual song. While they produce a larger volume of music, not every track necessarily becomes a standout hit. This could imply that their success may rely more on their established name rather than consistently high-performing songs.
 
 
 
