@@ -410,6 +410,7 @@ These genres are still popular but are dwarfed by Pop's massive stream count.
 
 <h2> Lets create a song !! </h2>
 
+> Key: B Major , Time sig : 4/4 , Tempo 125bpm , 3.5 mins , mid-high loudness , Danceable , Energetic , More Instumental , Electronic Pop , Mid - High Valence
 
 **Sakura Dreams**
 
