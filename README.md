@@ -411,6 +411,10 @@ These genres are still popular but are dwarfed by Pop's massive stream count.
  - **Speechiness** has the *strongest negative correlation (-0.22)*, suggesting that songs with more speech-like characteristics tend to be less popular.<br>
  - Other features, such as **Duration** and **Acousticness**, show *weak positive correlations* with Popularity, while **Energy**, **Valence**, and **Loudness** show *weak negative correlations*.
 
+<h3>Different collecting method from each data</h3>
+
+ - Each data collection from different method, resulting in format of name of song and artist contain capitalized letter and there're some unexpected **space" "**. This caused tons of duplication in data after the merging process, the cleaning process heavily required.
+
 <hr>
 
 <h1>Further Steps</h1>
