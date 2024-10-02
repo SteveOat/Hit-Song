@@ -1,7 +1,43 @@
+<hr>
+
+<h1>CREATING BILLBOARD'S HIT SONG</h1>
+
+<hr>
+
 <h1>Introducing Dataset</h1>
-lorem
+
+| df_1 Index | Column Name| Data Type |---| df_2 Index  | Column  | Data Type   |
+|---|---|---|---|---|---|---|    
+|0|Track|object|---| 0  | Unnamed: 0       | int64   |
+|1|Artist|object|---| 1  | Artist and Title | object  |
+| 2| Album | object |---|  2  | Artist           | object  |
+| 3 | Year | int64   |---| 3  | Streams          | int64   |
+| 4| Duration  | int64   |---| 4  | Daily            | int64   |
+| 5 | Time_Signature  | int64  |---| 5  | year             | float64 |
+| 6 | Danceability | float64   |---| 6  | main_genre       | object  |
+| 7 | Energy  | float64  |---| 7  | genres           | object  |
+| 8  | Key | int64   |---| 8  | first_genre      | object  |
+| 9 | Loudness | float64 |---|  9  | second_genre     | object  |
+| 10 | Mode | int64  |---| 10 | third_genre      | object  |
+| 11 | Speechiness    | float64   |---| 
+| 12  | Acousticness  | float64   |---| 
+| 13 | Instrumentalness   | float64   |---| 
+| 14| Liveness  | float64   |---| 
+| 15| Valence| float64   |---| 
+| 16 | Tempo| float64   |---| 
+| 17| Popularity|int64     |---| 
+
+<h3>Hit100.csv</h3>
+
+> df_1
 
 &nbsp;&nbsp;&nbsp;&nbsp; The dataset offers a detailed overview of contemporary music, featuring 620 tracks from 87 chart-topping artists between 2000 and 2023. It highlights the diversity of modern pop and R&B, capturing the evolution of Hot 100 hits over two decades. Each track is annotated with Spotify's audio features, providing insights into characteristics like tempo, energy, danceability, and valence, making it a valuable resource for exploring trends in popular music.
+
+<h3>spotify_full_list_20102023.csv</h3>
+
+> df_2
+
+&nbsp;&nbsp;&nbsp;&nbsp;This dataset provides a look at the most streamed songs on Spotify from 2010 to 2023. Sourced from the Kworb Spotify toplists and enriched with genre data from the Spotify API, this dataset provides a glance at the music trends evolution over 14 years.
 
 <h1>Key finding</h1>
 
@@ -315,6 +351,17 @@ Studio Liveness (light purple) :
 <hr>
 
 <h2>2. Find the most streamed genre on platform.</h2>
+
+<h3>Announcing the "Popularity" value</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp; **"Popularity"** refers to a metric provided by streaming platforms such as Spotify. It indicates how popular a track is based on a variety of factors, primarily:
+
+1. **Recent Streaming Activity**: Popularity is often calculated based on how frequently a song has been streamed in a recent period (like the last few days or weeks).
+2. **Lifetime Streams**: Although recent activity is a big part of popularity, the total number of streams a song has ever accumulated can also influence this score.
+3. **Engagement Metrics**: These can include things like how many people save the song to their playlists, share it, or listen to it multiple times.
+4. **Platform-Specific Factors**: Streaming services sometimes have internal algorithms that consider other factors, such as user interactions and geographical regions where the track is being played.
+
+&nbsp;&nbsp;&nbsp;&nbsp; For example, in Spotify's API, the popularity of a track is expressed as a number from 0 to 100, with 100 being the most popular.
 
 ![newplot (14)](https://github.com/user-attachments/assets/35ad2e04-b9c9-421c-8428-e6ed70ceb0e9)
 
