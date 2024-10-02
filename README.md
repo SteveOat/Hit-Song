@@ -55,7 +55,7 @@ Billboard compiles this data weekly from sources like Nielsen SoundScan and MRC 
 |Cluster\_Key|Key|
 |---|---|
 |C|0|
-|0C\#/Db|1|
+|C\#/Db|1|
 |D|2|
 |Eb|3|
 |E|4|
@@ -70,7 +70,7 @@ Billboard compiles this data weekly from sources like Nielsen SoundScan and MRC 
 
 **2. Mode**
 * Indicates whether the track is in a major (1) or minor (0) key.
-* 
+
 |Cluster\_Mode|Mode|
 |---|---|
 |Minor|0|
@@ -96,9 +96,9 @@ Billboard compiles this data weekly from sources like Nielsen SoundScan and MRC 
 
 |Cluster\_Danceability|Danceability|
 |---|---|
-|High\_Dance| 0.0 - 0.4|
+|High\_Dance| 0.7 - 1.0|
 |Mid\_Dance|0.4 - 0.7|
-|Low\_Dance| 0.7 - 1.0|
+|Low\_Dance| 0.0 - 0.4|
 
 **5. Energy**
 - Measure of intensity and activity in the track, from 0.0 to 1.0.
@@ -108,9 +108,9 @@ Billboard compiles this data weekly from sources like Nielsen SoundScan and MRC 
 
 |Cluster\_Energy|Energy|
 |---|---|
-|High\_Energy| 0.7 - 1.0|
+|High\_Energy|0.7 - 1.0|
 |Mid\_Energy|0.4 - 0.7|
-|Low\_Energy|0.0 - 0.4 |
+|Low\_Energy|0.0 - 0.4|
 
 **6.Loudness**
 - Spotify offers three loudness settings to control how normalization is applied:
@@ -127,9 +127,9 @@ Billboard compiles this data weekly from sources like Nielsen SoundScan and MRC 
 
 **7. Speechiness**
 -  Detects the presence of spoken words in a track, from 0.0 to 1.0.
- - Low Speechiness: 0.0 - 0.33 (e.g., music without much spoken word)
- - Medium Speechiness: 0.33 - 0.66 (e.g., tracks with both music and speech, like rap)
- - High Speechiness: 0.66 - 1.0 (e.g., podcasts, spoken word tracks)
+ - Low Speechiness: 0.0 - 0.333 (e.g., music without much spoken word)
+ - Medium Speechiness: 0.333 - 0.666 (e.g., tracks with both music and speech, like rap)
+ - High Speechiness: 0.666 - 1.0 (e.g., podcasts, spoken word tracks)
 
 |Cluster\_Speechiness|Speechiness|
 |---|---|
@@ -146,8 +146,8 @@ Billboard compiles this data weekly from sources like Nielsen SoundScan and MRC 
 |Cluster\_Acousticness|Acousticness|
 |---|---|
 |High\_Acoustic|0.7 - 1.0|
-|Mid\_Acoustic|0.333 - 0.7|
-|Low\_Acoustic| 0.0 - 0.333 |
+|Mid\_Acoustic|0.3 - 0.7|
+|Low\_Acoustic| 0.0 - 0.3 |
 
 **9. Instrumentalness**
 - Probability that the track contains no vocals, from 0.0 to 1.0.
@@ -184,9 +184,9 @@ Detects the presence of a live audience in the recording, from 0.0 to 1.0. <br>
 
 |Cluster\_Valence|Valence|
 |---|---|
-|High\_Valence| 0.7 - 1.0|
-|Mid\_Valence|0.333 - 0.7|
-|Low\_Valence| 0.0 - 0.333|
+|High\_Valence| 0.6 - 1.0|
+|Mid\_Valence|0.3 - 0.6|
+|Low\_Valence| 0.0 - 0.3|
 
 **12. Tempo**
 - Speed of the track in beats per minute (BPM).
