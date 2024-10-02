@@ -412,7 +412,7 @@ These genres are still popular but are dwarfed by Pop's massive stream count.
 
 > Key: B Major , Time sig : 4/4 , Tempo 125bpm , 3.5 mins , mid-high loudness , Danceable , Energetic , More Instumental , Electronic Pop , Mid - High Valence
 
-**Sakura Dreams**
+**Kokoro no Uta**
 
 ![image](https://github.com/user-attachments/assets/a6d2fd97-800e-410d-b384-74f22a56e657)
 
