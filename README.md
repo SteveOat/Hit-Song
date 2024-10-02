@@ -443,6 +443,6 @@ https://suno.com/song/2c69627f-5e20-40de-a4dd-41f70f28fb53
  - Interactions between variables to understand non-linear relationships and more of data.<br>
  - Time-Series Analysis, study how music trends evolve over time based on track release years). <br>
  -  Playlist Creation Analysis, examine which track features are more likely to land a song on popular playlists.<br>
- -  **For further study, you could include additional datasets, such as marketing data, to analyze more factors that contribute to a song's potential for becoming popular.**
+ -  **For further study, including more additional datasets, such as marketing data, to analyze more factors that contribute to a song's potential for becoming popular.**
 
 <hr>
