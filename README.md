@@ -1,6 +1,6 @@
 <hr>
 
-<h1>CREATING BILLBOARD'S HIT SONG</h1>
+<h1 align=center>CREATING BILLBOARD'S HIT SONG</h1>
 
 <hr>
 
@@ -46,7 +46,7 @@ Working on Spotify's api data
 2. Find the most streamed genre on platform.
 3. Does the artist's fame affect whether a song makes it onto the Billboard charts?
 
-<h1>What is "Billboard" and Why "Spotify"</h1>
+<h1 align=center>What is "Billboard" and Why "Spotify"</h1>
 Songs make it to the **Billboard** charts (Top Hot 100) based on three key factors:
 
 1. *Streaming* : Plays on platforms like ***Spotify***, Apple Music, YouTube, etc.
@@ -400,16 +400,25 @@ These genres are still popular but are dwarfed by Pop's massive stream count.
 
 &nbsp;&nbsp;&nbsp;&nbsp; On the other hand, **artists with more tracks but lower average popularity** (like Latto and Lizzo) might indicate that their popularity is driven more by their overall fame and brand as artists, rather than the quality of each individual song. While they produce a larger volume of music, not every track necessarily becomes a standout hit. This could imply that their success may rely more on their established name rather than consistently high-performing songs.
 
+<hr>
 
+<h1>Challenges</h1>
 
+<h3>Low Correlation</h3>
 
+![newplot (18)](https://github.com/user-attachments/assets/7cc5cf31-31e4-47d7-8deb-392b564a23ad)
 
+ - **Speechiness** has the *strongest negative correlation (-0.22)*, suggesting that songs with more speech-like characteristics tend to be less popular.<br>
+ - Other features, such as **Duration** and **Acousticness**, show *weak positive correlations* with Popularity, while **Energy**, **Valence**, and **Loudness** show *weak negative correlations*.
 
+<hr>
 
+<h1>Further Steps</h1>
 
+ - To get a clearer picture, running a regression analysis can help to visualize how much of the variation in Popularity is explained by these features.<br>
+ - Interactions between variables to understand non-linear relationships and more of data.<br>
+ - Time-Series Analysis, study how music trends evolve over time based on track release years). <br>
+ -  Playlist Creation Analysis, examine which track features are more likely to land a song on popular playlists.<br>
+ -  **For further study, you could include additional datasets, such as marketing data, to analyze more factors that contribute to a song's potential for becoming popular.**
 
-
-
-
-
-
+<hr>
