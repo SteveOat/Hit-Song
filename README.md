@@ -87,10 +87,12 @@ Billboard compiles this data weekly from sources like Nielsen SoundScan and MRC 
 
 <hr>
 
-<h1>Clustering Data</h1>
+<h2>1. Visualize characteristics of hit songs on Billboard charts.</h2>
 
-**1. Key**
-*   Musical key of the track, represented by integers (0 = C, 1 = C#/Db, etc.).
+<h3>1. Key Signature</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Key signature**
+
 
 |Cluster\_Key|Key|
 |---|---|
@@ -106,102 +108,196 @@ Billboard compiles this data weekly from sources like Nielsen SoundScan and MRC 
 |A|9|
 |A\#/Bb|10|
 |B|11|
+*   Musical key of the track, represented by integers (0 = C, 1 = C#/Db, etc.).
 
+<h3>Plot the graph</h3>
 
-**2. Mode**
-* Indicates whether the track is in a major (1) or minor (0) key.
+![newplot](https://github.com/user-attachments/assets/0a3515db-6d85-4f76-bde0-336cb21d78c7)
+
+&nbsp;&nbsp;&nbsp;&nbsp;**B , C and C#/Db :**
+
+> The keys B, C, and C#/Db dominate this dataset, while Eb and A#/Bb are the least represented. It seems the dataset leans heavily on certain keys while others are used less frequently.
+
+<h3>2. Mode</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Mode**
 
 |Cluster\_Mode|Mode|
 |---|---|
 |Minor|0|
 |Major|1|
+* Indicates whether the track is in a major (1) or minor (0) key.
 
-**3. Duration**
-- Length of the track, usually in milliseconds.
- - Short: 0 - 180,000 ms (0 - 3 minutes)
- - Medium: 180,001 - 300,000 ms (3 - 5 minutes)
- - Long: 300,001 ms and above (5+ minutes)
+<h3>Plot the graph</h3>
+
+![newplot (2)](https://github.com/user-attachments/assets/b48fb2e5-7ed3-47a2-87b7-9827cabdfc9d)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Major Mode:
+> Most songs in the dataset are in a major key, making up almost two-thirds of the total. A smaller chunk, just over a third, are in a minor key, which tends to give songs a different, more emotional vibe.
+
+<h3>3. Duration</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Duration**
 
 |Cluster\_Duration\(Min\)|Duration|
 |---|---|
 |0-3mins|0 - 180,000 ms|
 |3-5mins|180,001 - 300,000 ms|
 |5+mins|300,001 ms and above |
+- Length of the track, usually in milliseconds.
+ - Short: 0 - 180,000 ms (0 - 3 minutes)
+ - Medium: 180,001 - 300,000 ms (3 - 5 minutes)
+ - Long: 300,001 ms and above (5+ minutes)
 
-**4. Danceability**
-- How suitable a track is for dancing, from 0.0 to 1.0.
- - Low: 0.0 - 0.4 (e.g., classical, ambient)
- - Medium: 0.4 - 0.7 (e.g., soft rock, indie)
- - High: 0.7 - 1.0 (e.g., pop, dance, hip-hop)
+<h3>Plot the graph</h3>
+
+![newplot (4)](https://github.com/user-attachments/assets/c9060aa4-32c9-47ee-a799-8df729eeb141)
+
+&nbsp;&nbsp;&nbsp;&nbsp;3-5 minutes song :
+
+> Tracks between 3-5 minutes dominate. The majority of the tracks, 462 in total, fall within the 3-5 minute range. This indicates that most tracks in the dataset are of moderate length, which is a common duration for popular music.
+
+<h3>4. Danceability</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Danceability**
 
 |Cluster\_Danceability|Danceability|
 |---|---|
 |High\_Dance| 0.7 - 1.0|
 |Mid\_Dance|0.4 - 0.7|
 |Low\_Dance| 0.0 - 0.4|
+- How suitable a track is for dancing, from 0.0 to 1.0.
+ - Low: 0.0 - 0.4 (e.g., classical, ambient)
+ - Medium: 0.4 - 0.7 (e.g., soft rock, indie)
+ - High: 0.7 - 1.0 (e.g., pop, dance, hip-hop)
 
-**5. Energy**
-- Measure of intensity and activity in the track, from 0.0 to 1.0.
- - Low Energy: 0.0 - 0.4 (e.g., acoustic, ambient, soft ballads)
- - Medium Energy: 0.4 - 0.7 (e.g., indie rock, chill electronic)
- - High Energy: 0.7 - 1.0 (e.g., EDM, rock, fast-paced pop)
+<h3>Plot the graph</h3>
+
+![newplot (6)](https://github.com/user-attachments/assets/bc7b53c0-cfbc-423d-866c-146ce89d5681)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Mid Dancability :
+
+> Mid Dance (red), mid-danceability tracks are the most common and have a wide range of popularity, while low-danceability tracks are the least common but can still be quite popular.
+
+<h3>5. Energy</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Energy**
 
 |Cluster\_Energy|Energy|
 |---|---|
 |High\_Energy|0.7 - 1.0|
 |Mid\_Energy|0.4 - 0.7|
 |Low\_Energy|0.0 - 0.4|
+- Measure of intensity and activity in the track, from 0.0 to 1.0.
+ - Low Energy: 0.0 - 0.4 (e.g., acoustic, ambient, soft ballads)
+ - Medium Energy: 0.4 - 0.7 (e.g., indie rock, chill electronic)
+ - High Energy: 0.7 - 1.0 (e.g., EDM, rock, fast-paced pop)
 
-**6.Loudness**
-- Spotify offers three loudness settings to control how normalization is applied:
+<h3>Plot the graph</h3>
 
- - Loud : This applies a normalization level of around -11 dB LUFS, suitable for noisier environments where higher volume is needed.
- - Normal (default) : This is the standard setting at -14 dB LUFS, aiming for balanced playback across all tracks.
- - Quiet : This setting lowers the loudness normalization target to -23 dB LUFS, ideal for quiet environments or more dynamic listening experiences.
+![newplot (8)](https://github.com/user-attachments/assets/ce593f60-0178-4b03-9b96-1ce4d6e2832a)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Mid Energy (red)
+
+> The dataset is dominated by mid- and high-energy tracks, with high-energy tracks showing a concentration in the middle popularity range. Low-energy songs are less common but can achieve high popularity, with a notable spread in their popularity scores.
+
+<h3>6.Loudness</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Loudness**
 
 |Cluster\_Loudness|Loudness|
 |---|---|
 |High\_Loud| > -11|
 |Mid\_Loud| -14 > x < -11|
 |Low\_Loud| < -14|
+- Spotify offers three loudness settings to control how normalization is applied:
 
-**7. Speechiness**
--  Detects the presence of spoken words in a track, from 0.0 to 1.0.
- - Low Speechiness: 0.0 - 0.333 (e.g., music without much spoken word)
- - Medium Speechiness: 0.333 - 0.666 (e.g., tracks with both music and speech, like rap)
- - High Speechiness: 0.666 - 1.0 (e.g., podcasts, spoken word tracks)
+ - Loud : This applies a normalization level of around -11 dB LUFS, suitable for noisier environments where higher volume is needed.
+ - Normal (default) : This is the standard setting at -14 dB LUFS, aiming for balanced playback across all tracks.
+ - Quiet : This setting lowers the loudness normalization target to -23 dB LUFS, ideal for quiet environments or more dynamic listening experiences.
+
+<h3>Plot the graph</h3>
+
+![newplot (5)](https://github.com/user-attachments/assets/fed033df-3ca4-448e-969d-2edc55ce53a8)
+
+&nbsp;&nbsp;&nbsp;&nbsp;High Loudness:
+
+> The dataset is heavily skewed towards songs with high loudness, with a significant majority of tracks falling into this category. Mid- and low-loud tracks are much less common. This refers to tracks with a higher overall sound level.
+
+<h3>7. Speechiness</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Speechiness**
 
 |Cluster\_Speechiness|Speechiness|
 |---|---|
 |High\_Speech| 0.666 - 1.0|
 |Mid\_Speech|0.333 - 0.666|
 |Low\_Speech|0.0 - 0.333 |
+-  Detects the presence of spoken words in a track, from 0.0 to 1.0.
+ - Low Speechiness: 0.0 - 0.333 (e.g., music without much spoken word)
+ - Medium Speechiness: 0.333 - 0.666 (e.g., tracks with both music and speech, like rap)
+ - High Speechiness: 0.666 - 1.0 (e.g., podcasts, spoken word tracks)
 
-**8. Acousticness**
-- Confidence level that the track is acoustic, from 0.0 to 1.0.
- - Low Acousticness: 0.0 - 0.3 (e.g., electronic, heavily produced)
- - Medium Acousticness: 0.3 - 0.7 (e.g., some balance between acoustic and electronic elements)
- - High Acousticness: 0.7 - 1.0 (e.g., acoustic tracks, singer-songwriter)
+<h3>Plot the graph</h3>
+
+![newplot (9)](https://github.com/user-attachments/assets/7ae4fa8a-5bb1-4b31-8cb3-d83844f6bbe8)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Low Speechiness (yellow):
+
+> Scatter plot suggests that most popular songs don't have a high amount of spoken word content. Songs with more speech-like qualities (mid and high speechiness) are less common, and their popularity is more varied.
+
+<h3>8. Acousticness</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Acousticness**
 
 |Cluster\_Acousticness|Acousticness|
 |---|---|
 |High\_Acoustic|0.7 - 1.0|
 |Mid\_Acoustic|0.3 - 0.7|
 |Low\_Acoustic| 0.0 - 0.3 |
+- Confidence level that the track is acoustic, from 0.0 to 1.0.
+ - Low Acousticness: 0.0 - 0.3 (e.g., electronic, heavily produced)
+ - Medium Acousticness: 0.3 - 0.7 (e.g., some balance between acoustic and electronic elements)
+ - High Acousticness: 0.7 - 1.0 (e.g., acoustic tracks, singer-songwriter)
 
-**9. Instrumentalness**
-- Probability that the track contains no vocals, from 0.0 to 1.0.
- - Vocal-heavy: 0.0 - 0.1 (most mainstream music)
- - Medium Instrumentalness: 0.1 - 0.5 (vocals present but not dominant)
- - Instrumental: 0.5 - 1.0 (mostly instrumental, no vocals)
+<h3>Plot the graph</h3>
+
+![newplot (10)](https://github.com/user-attachments/assets/e39cf834-84ce-4ffb-ac33-894abde0e670)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Low Acousticness (yellow):
+
+> Most tracks in the dataset are less acoustic and more electronic or produced, and they tend to fall in the mid-to-high popularity range. As acousticness increases, the number of tracks decreases, and popularity tends to spread more evenly across a mid-level range.
+
+<h3>9. Instrumentalness</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Instrumentalness**
 
 |Cluster\_Instrumentalness|Instrumentalness|
 |---|---|
 |High\_Instru| 0.5 - 1.0|
 |Mid\_Instru|0.1 - 0.5|
 |Low\_Instru| 0.0 - 0.1|
+- Probability that the track contains no vocals, from 0.0 to 1.0.
+ - Vocal-heavy: 0.0 - 0.1 (most mainstream music)
+ - Medium Instrumentalness: 0.1 - 0.5 (vocals present but not dominant)
+ - Instrumental: 0.5 - 1.0 (mostly instrumental, no vocals)
 
-**10. Liveness**
+<h3>Plot the graph</h3>
+
+![newplot (11)](https://github.com/user-attachments/assets/d0a91a32-9c64-4226-9869-5a35ee1bdeb6)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Low Instrumentalness (yellow):
+
+> Most tracks have very low instrumentalness, meaning they likely include vocals and are more popular. Mid and high instrumentalness tracks (which likely have more instrumental content or no vocals) are far less common but can still achieve moderate popularity.
+
+<h3>10. Liveness</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Liveness**
+
+|Cluster\_Liveness|Liveness|
+|---|---|
+|Studio_Liveness| 0.0 - 0.3|
+|Outdoor_Liveness|0.3 - 1|
 Detects the presence of a live audience in the recording, from 0.0 to 1.0. <br>
 
 10.1.Studio quality group
@@ -211,146 +307,68 @@ Detects the presence of a live audience in the recording, from 0.0 to 1.0. <br>
  - Medium Liveness: 0.3 - 0.6 (some audience noise or live characteristics)
  - Live Recording: 0.6 - 1.0 (recorded live in concert with audience presence)
 
-|Cluster\_Liveness|Liveness|
-|---|---|
-|Studio_Liveness| 0.0 - 0.3|
-|Outdoor_Liveness|0.3 - 1|
+<h3>Plot the graph</h3>
 
-**11. Valence**
-- Describes the musical positiveness conveyed by a track, from 0.0 to 1.0.
- - Low Valence: 0.0 - 0.3 (e.g., sad, melancholic tracks)
- - Medium Valence: 0.3 - 0.6 (e.g., neutral or emotionally mixed tracks)
- - High Valence: 0.6 - 1.0 (e.g., happy, cheerful, upbeat tracks)
+![newplot (13)](https://github.com/user-attachments/assets/1dc50313-3d18-43ac-bf09-76be75cb45ec)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Studio Liveness (light purple) :
+
+> Most of the tracks in this dataset have low liveness,indicates these tracks are likely recorded in a studio setting. Tracks with higher liveness (more live-sounding or actual live recordings) are less common but can still achieve a wide range of popularity levels.
+
+<h3>11. Valence</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Valence**
 
 |Cluster\_Valence|Valence|
 |---|---|
 |High\_Valence| 0.6 - 1.0|
 |Mid\_Valence|0.3 - 0.6|
 |Low\_Valence| 0.0 - 0.3|
+- Describes the musical positiveness conveyed by a track, from 0.0 to 1.0.
+ - Low Valence: 0.0 - 0.3 (e.g., sad, melancholic tracks)
+ - Medium Valence: 0.3 - 0.6 (e.g., neutral or emotionally mixed tracks)
+ - High Valence: 0.6 - 1.0 (e.g., happy, cheerful, upbeat tracks)
 
-**12. Tempo**
-- Speed of the track in beats per minute (BPM).
- - Slow: 0 - 60 BPM (e.g., ballads, ambient music)
- - Medium: 60 - 120 BPM (e.g., pop, mid-tempo rock)
- - Fast: 120 - 180+ BPM (e.g., dance, EDM, upbeat tracks)
+<h3>Plot the graph</h3>
+
+![newplot (12)](https://github.com/user-attachments/assets/1b293f16-f220-4982-a5b6-f9758d7c4fb2)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Mid & High Valence :
+
+> Mid- and high-valence tracks (positive or happy songs) dominate the dataset, and they tend to be quite popular, with most falling in the 60 to 80 popularity range.
+
+<h3>12. Tempo</h3>
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Cluster the Tempo**
 
 |Cluster\_Tempo|Tempo|
 |---|---|
 |High\_Tempo| 120 - 180+ BPM |
 |Mid\_Tempo|60 - 120 BPM|
 |Low\_Tempo| 0 - 60 BPM|
+- Speed of the track in beats per minute (BPM).
+ - Slow: 0 - 60 BPM (e.g., ballads, ambient music)
+ - Medium: 60 - 120 BPM (e.g., pop, mid-tempo rock)
+ - Fast: 120 - 180+ BPM (e.g., dance, EDM, upbeat tracks)
 
-**13. Time Signature** <br>
-<p>Do not required clustering</p>
-
-<hr>
-
-
-
-<h2>1. Visualize characteristics of hit songs on Billboard charts.</h2>
-
-<h3>Key Signature</h3>
-
-![newplot](https://github.com/user-attachments/assets/0a3515db-6d85-4f76-bde0-336cb21d78c7)
-
-B , C and C#/Db :
-
-> The keys B, C, and C#/Db dominate this dataset, while Eb and A#/Bb are the least represented. It seems the dataset leans heavily on certain keys while others are used less frequently.
-
-<h3>Time Signature</h3>
-
-![newplot (1)](https://github.com/user-attachments/assets/b75c1d2e-1a45-4b4d-ab3a-86da65d16aaf)
-
-4/4 Time Signature:
-
-> The overwhelming majority of tracks (584) use the 4/4 time signature, while other time signatures like 3/4, 5/8, and 1/4 are used much less frequently, making them rare in the dataset. This reflects the dominance of the 4/4 signature in mainstream music.
-
-<h3>Major or Minor</h3>
-
-![newplot (2)](https://github.com/user-attachments/assets/b48fb2e5-7ed3-47a2-87b7-9827cabdfc9d)
-
-Major Mode:
-> Most songs in the dataset are in a major key, making up almost two-thirds of the total. A smaller chunk, just over a third, are in a minor key, which tends to give songs a different, more emotional vibe.
-
-<h3> Tempo</h3>
+<h3>Plot the graph</h3>
 
 ![newplot (3)](https://github.com/user-attachments/assets/13e37899-67cc-41ad-b7e5-0e4146660463)
 
-Mid & High Tempo
+&nbsp;&nbsp;&nbsp;&nbsp;Mid & High Tempo
 
 > Most of the tracks in this dataset are either mid-tempo or high-tempo, with a slight edge to the faster songs. Low-tempo tracks don’t seem to be represented at all.
 
-<h3> Duration </h3> 
+<h3>13. Time Signature</h3> <br>
+> Do not required clustering
 
-![newplot (4)](https://github.com/user-attachments/assets/c9060aa4-32c9-47ee-a799-8df729eeb141)
+<h3>Plot the graph</h3>
 
-3-5 minutes song :
+![newplot (1)](https://github.com/user-attachments/assets/b75c1d2e-1a45-4b4d-ab3a-86da65d16aaf)
 
-> Tracks between 3-5 minutes dominate. The majority of the tracks, 462 in total, fall within the 3-5 minute range. This indicates that most tracks in the dataset are of moderate length, which is a common duration for popular music.
+&nbsp;&nbsp;&nbsp;&nbsp;4/4 Time Signature:
 
-<h3> Loudness </h3>
-
-![newplot (5)](https://github.com/user-attachments/assets/fed033df-3ca4-448e-969d-2edc55ce53a8)
-
-High Loudness:
-
-> The dataset is heavily skewed towards songs with high loudness, with a significant majority of tracks falling into this category. Mid- and low-loud tracks are much less common. This refers to tracks with a higher overall sound level.
-
-<h3> Danceability </h3>
-
-![newplot (6)](https://github.com/user-attachments/assets/bc7b53c0-cfbc-423d-866c-146ce89d5681)
-
-Mid Dancability :
-
-> Mid Dance (red), mid-danceability tracks are the most common and have a wide range of popularity, while low-danceability tracks are the least common but can still be quite popular.
-
-<h3> Energy </h3>
-
-![newplot (8)](https://github.com/user-attachments/assets/ce593f60-0178-4b03-9b96-1ce4d6e2832a)
-
-Mid Energy (red)
-
-> The dataset is dominated by mid- and high-energy tracks, with high-energy tracks showing a concentration in the middle popularity range. Low-energy songs are less common but can achieve high popularity, with a notable spread in their popularity scores.
-
-<h3> Speechiness</h3>
-
-![newplot (9)](https://github.com/user-attachments/assets/7ae4fa8a-5bb1-4b31-8cb3-d83844f6bbe8)
-
-Low Speechiness (yellow):
-
-> Scatter plot suggests that most popular songs don't have a high amount of spoken word content. Songs with more speech-like qualities (mid and high speechiness) are less common, and their popularity is more varied.
-
-<h3> Acouticness</h3>
-
-![newplot (10)](https://github.com/user-attachments/assets/e39cf834-84ce-4ffb-ac33-894abde0e670)
-
-Low Acousticness (yellow):
-
-> Most tracks in the dataset are less acoustic and more electronic or produced, and they tend to fall in the mid-to-high popularity range. As acousticness increases, the number of tracks decreases, and popularity tends to spread more evenly across a mid-level range.
-
-<h3> Instrumentalness</h3>
-
-![newplot (11)](https://github.com/user-attachments/assets/d0a91a32-9c64-4226-9869-5a35ee1bdeb6)
-
-Low Instrumentalness (yellow):
-
-> Most tracks have very low instrumentalness, meaning they likely include vocals and are more popular. Mid and high instrumentalness tracks (which likely have more instrumental content or no vocals) are far less common but can still achieve moderate popularity.
-
-<h3> Valence</h3>
-
-![newplot (12)](https://github.com/user-attachments/assets/1b293f16-f220-4982-a5b6-f9758d7c4fb2)
-
-Mid & High Valence :
-
-> Mid- and high-valence tracks (positive or happy songs) dominate the dataset, and they tend to be quite popular, with most falling in the 60 to 80 popularity range.
-
-<h3> Liveness</h3>
-
-![newplot (13)](https://github.com/user-attachments/assets/1dc50313-3d18-43ac-bf09-76be75cb45ec)
-
-Studio Liveness (light purple) :
-
-> Most of the tracks in this dataset have low liveness,indicates these tracks are likely recorded in a studio setting. Tracks with higher liveness (more live-sounding or actual live recordings) are less common but can still achieve a wide range of popularity levels.
+> The overwhelming majority of tracks (584) use the 4/4 time signature, while other time signatures like 3/4, 5/8, and 1/4 are used much less frequently, making them rare in the dataset. This reflects the dominance of the 4/4 signature in mainstream music.
 
 <hr>
 
