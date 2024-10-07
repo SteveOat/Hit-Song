@@ -367,7 +367,7 @@ Studio Liveness (light purple) :
 
 &nbsp;&nbsp;&nbsp;&nbsp; For example, in Spotify's API, the popularity of a track is expressed as a number from 0 to 100, with 100 being the most popular.
 
-![newplot (14)](https://github.com/user-attachments/assets/35ad2e04-b9c9-421c-8428-e6ed70ceb0e9)
+![newplot](https://github.com/user-attachments/assets/941b1b87-ee9b-46a0-aa66-d9e6a72e7f79)
 
 > The *NaN* Data
 
@@ -375,7 +375,7 @@ Studio Liveness (light purple) :
 
 <br>
 
-![newplot (17)](https://github.com/user-attachments/assets/23f16954-1b47-43b6-b0ab-628694e67849)
+![newplot (1)](https://github.com/user-attachments/assets/66df5eef-6c5a-4966-8790-6116fd6d16c3)
 
 > More clarify data
 
